@@ -1,0 +1,25 @@
+{
+  "catalogVersion": "2026.02.27-001",
+  "generatedAt": "2026-02-27T00:00:00Z",
+  "ttlSeconds": 86400,
+  "items": [
+    {
+      "moduleId": "module.asr",
+      "engine": "mlx",
+      "platforms": ["ios", "macos"],
+      "listRef": {
+        "url": "./asr-mlx-models.json",
+        "sha256": ""
+      }
+    },
+    {
+      "moduleId": "module.asr",
+      "engine": "whispercpp",
+      "platforms": ["ios", "macos"],
+      "listRef": {
+        "url": "./asr-whispercpp-models.json",
+        "sha256": ""
+      }
+    }
+  ]
+}

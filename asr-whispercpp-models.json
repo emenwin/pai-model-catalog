@@ -1,0 +1,1322 @@
+[
+  {
+    "modelId": "whisper-base",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"
+      },
+      {
+        "path": "ggml-base-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-base-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-base-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-base.en",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base.en.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin"
+      },
+      {
+        "path": "ggml-base.en-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "english",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-base.en-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base.en-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-base.en-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-base.en-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "base",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v1.bin"
+      },
+      {
+        "path": "ggml-large-v1-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v1-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v2",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v2.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2.bin"
+      },
+      {
+        "path": "ggml-large-v2-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v2-q5_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v2-q5_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2-q5_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v2-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v2-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v3",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v3.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin"
+      },
+      {
+        "path": "ggml-large-v3-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-q5_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v3-q5_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-q5_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v3-turbo.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin"
+      },
+      {
+        "path": "ggml-large-v3-turbo-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo-q5_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v3-turbo-q5_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-large-v3-turbo-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin"
+      },
+      {
+        "path": "ggml-medium-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium-q5_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium-q5_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium-q5_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium.en",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium.en.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.en.bin"
+      },
+      {
+        "path": "ggml-medium.en-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.en-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "english",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium.en-q5_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium.en-q5_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.en-q5_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q5_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-medium.en-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-medium.en-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.en-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "medium",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin"
+      },
+      {
+        "path": "ggml-small-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small.en",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small.en.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en.bin"
+      },
+      {
+        "path": "ggml-small.en-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "english",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small.en-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small.en-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small.en-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small.en-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin"
+      },
+      {
+        "path": "ggml-tiny-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny.en",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny.en.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en.bin"
+      },
+      {
+        "path": "ggml-tiny.en-encoder.mlmodelc.zip",
+        "role": "coreml_encoder",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-encoder.mlmodelc.zip"
+      }
+    ],
+    "recommendedEngines": [
+      "ios.coreml",
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "english",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": false,
+      "coreml": true,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny.en-q5_1",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny.en-q5_1.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-q5_1.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q5_1",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-tiny.en-q8_0",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-tiny.en-q8_0.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-q8_0.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 512,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "tiny",
+      "lang": "english",
+      "quantized": true,
+      "quant_type": "q8_0",
+      "tdrz": false,
+      "coreml": false,
+      "hfRepoId": "ggerganov/whisper.cpp"
+    }
+  },
+  {
+    "modelId": "whisper-small.en-tdrz",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "ggml-small.en-tdrz.bin",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/akashmjn/tinydiarize-whisper.cpp/resolve/main/ggml-small.en-tdrz.bin"
+      }
+    ],
+    "recommendedEngines": [
+      "cpp.whisper"
+    ],
+    "constraints": {
+      "minOs": "14.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "mit",
+    "_meta": {
+      "family": "small",
+      "lang": "english",
+      "quantized": false,
+      "quant_type": null,
+      "tdrz": true,
+      "coreml": false,
+      "hfRepoId": "akashmjn/tinydiarize-whisper.cpp"
+    }
+  }
+]
