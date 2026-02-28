@@ -1,6 +1,6 @@
 [
   {
-    "modelId": "whisper-base-mlx",
+    "modelId": "whisper-base-4bit",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -13,59 +13,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-4bit/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base-mlx",
-      "hfLastModified": "2024-03-09T03:32:39.000Z",
-      "hfDownloads": 2123
-    }
-  },
-  {
-    "modelId": "whisper-base-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-4bit/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-4bit/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -76,7 +31,7 @@
       "minRamMB": 1024,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
       "family": "base",
       "lang": "multilingual",
@@ -84,13 +39,13 @@
       "quant_type": "4bit",
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:32:42.000Z",
-      "hfDownloads": 60
+      "hfRepoId": "mlx-community/whisper-base-4bit",
+      "hfLastModified": "2025-12-15T17:48:42.000Z",
+      "hfDownloads": 513
     }
   },
   {
-    "modelId": "whisper-base-mlx-8bit",
+    "modelId": "whisper-base-8bit",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -103,14 +58,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-8bit/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-8bit/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-8bit/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-8bit/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -121,7 +76,7 @@
       "minRamMB": 1024,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
       "family": "base",
       "lang": "multilingual",
@@ -129,598 +84,13 @@
       "quant_type": "8bit",
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:33:28.000Z",
-      "hfDownloads": 22
-    }
-  },
-  {
-    "modelId": "whisper-base-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:35:07.000Z",
-      "hfDownloads": 11
-    }
-  },
-  {
-    "modelId": "whisper-base-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:19.000Z",
-      "hfDownloads": 28
-    }
-  },
-  {
-    "modelId": "whisper-base.en-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base.en-mlx",
-      "hfLastModified": "2024-03-09T03:33:31.000Z",
-      "hfDownloads": 78
-    }
-  },
-  {
-    "modelId": "whisper-base.en-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base.en-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:33:34.000Z",
-      "hfDownloads": 10
-    }
-  },
-  {
-    "modelId": "whisper-base.en-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base.en-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:34:21.000Z",
-      "hfDownloads": 4
-    }
-  },
-  {
-    "modelId": "whisper-base.en-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base.en-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:35:14.000Z",
-      "hfDownloads": 9
-    }
-  },
-  {
-    "modelId": "whisper-base.en-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base.en-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "base",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-base.en-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:27.000Z",
-      "hfDownloads": 6
-    }
-  },
-  {
-    "modelId": "whisper-large-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-mlx",
-      "hfLastModified": "2024-03-09T04:13:33.000Z",
-      "hfDownloads": 486
-    }
-  },
-  {
-    "modelId": "whisper-large-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-mlx-4bit",
-      "hfLastModified": "2024-03-09T04:20:34.000Z",
-      "hfDownloads": 9
-    }
-  },
-  {
-    "modelId": "whisper-large-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-mlx-8bit",
-      "hfLastModified": "2024-03-09T04:32:46.000Z",
-      "hfDownloads": 9
-    }
-  },
-  {
-    "modelId": "whisper-large-v1-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": null,
-      "variant": "v1-mlx",
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v1-mlx",
-      "hfLastModified": "2024-03-09T04:54:45.000Z",
-      "hfDownloads": 6
-    }
-  },
-  {
-    "modelId": "whisper-large-v1-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": "v1-mlx",
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v1-mlx-4bit",
-      "hfLastModified": "2024-03-09T05:01:48.000Z",
-      "hfDownloads": 8
-    }
-  },
-  {
-    "modelId": "whisper-large-v1-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v1-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": "v1-mlx",
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v1-mlx-8bit",
-      "hfLastModified": "2024-03-09T05:14:01.000Z",
+      "hfRepoId": "mlx-community/whisper-base-8bit",
+      "hfLastModified": "2025-12-15T17:47:22.000Z",
       "hfDownloads": 7
     }
   },
   {
-    "modelId": "whisper-large-v2-mlx-4bit",
+    "modelId": "whisper-base-fp16",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -733,14 +103,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v2-mlx-4bit/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-fp16/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v2-mlx-4bit/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-fp16/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -748,114 +118,24 @@
     ],
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 8192,
+      "minRamMB": 2048,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": "v2-mlx",
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v2-mlx-4bit",
-      "hfLastModified": "2024-03-09T05:21:23.000Z",
-      "hfDownloads": 24
-    }
-  },
-  {
-    "modelId": "whisper-large-v2-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v2-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v2-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "large",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": "v2-mlx",
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v2-mlx-8bit",
-      "hfLastModified": "2024-03-09T05:33:41.000Z",
-      "hfDownloads": 14
-    }
-  },
-  {
-    "modelId": "whisper-large-v3-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
-    },
-    "license": "mit",
-    "_meta": {
-      "family": "large",
+      "family": "base",
       "lang": "multilingual",
       "quantized": false,
       "quant_type": null,
-      "variant": "v3-mlx",
+      "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v3-mlx",
-      "hfLastModified": "2024-08-09T18:33:12.000Z",
-      "hfDownloads": 5306
+      "hfRepoId": "mlx-community/whisper-base-fp16",
+      "hfLastModified": "2025-12-15T17:44:54.000Z",
+      "hfDownloads": 58
     }
   },
   {
-    "modelId": "whisper-large-v3-turbo",
+    "modelId": "whisper-base-khmer-mlx-fp16",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -868,14 +148,239 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp16/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo/resolve/main/weights.safetensors"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp16/resolve/main/weights.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "base",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-base-khmer-mlx-fp16",
+      "hfLastModified": "2025-10-25T14:55:48.000Z",
+      "hfDownloads": 7
+    }
+  },
+  {
+    "modelId": "whisper-base-khmer-mlx-fp32",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp32/resolve/main/config.json"
+      },
+      {
+        "path": "weights.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp32/resolve/main/weights.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "base",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": "fp32",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-base-khmer-mlx-fp32",
+      "hfLastModified": "2025-10-25T14:52:14.000Z",
+      "hfDownloads": 10
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-4bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": "v3-4bit",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-4bit",
+      "hfLastModified": "2025-12-15T18:21:37.000Z",
+      "hfDownloads": 97
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-8bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-8bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "8bit",
+      "variant": "v3-8bit",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-8bit",
+      "hfLastModified": "2025-12-15T18:18:25.000Z",
+      "hfDownloads": 24
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-fp16/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 16384,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": "v3-fp16",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-fp16",
+      "hfLastModified": "2025-12-15T18:14:38.000Z",
+      "hfDownloads": 65
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-lv-late-cv19",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-lv-late-cv19/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-lv-late-cv19/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -887,6 +392,186 @@
       "supportsStreaming": false
     },
     "license": "unknown",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": "v3-lv",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-lv-late-cv19",
+      "hfLastModified": "2026-02-05T00:47:24.000Z",
+      "hfDownloads": 173
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-mlx-4bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": "v3-mlx",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-mlx-4bit",
+      "hfLastModified": "2024-01-28T21:41:14.000Z",
+      "hfDownloads": 130
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo-4bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": "v3-turbo",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-turbo-4bit",
+      "hfLastModified": "2025-12-15T18:25:03.000Z",
+      "hfDownloads": 625
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo-8bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-8bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "large",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "8bit",
+      "variant": "v3-turbo",
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-large-v3-turbo-8bit",
+      "hfLastModified": "2025-12-15T18:24:11.000Z",
+      "hfDownloads": 106
+    }
+  },
+  {
+    "modelId": "whisper-large-v3-turbo-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-fp16/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 16384,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
     "_meta": {
       "family": "large",
       "lang": "multilingual",
@@ -894,13 +579,13 @@
       "quant_type": null,
       "variant": "v3-turbo",
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-large-v3-turbo",
-      "hfLastModified": "2024-11-01T19:41:26.000Z",
-      "hfDownloads": 9587
+      "hfRepoId": "mlx-community/whisper-large-v3-turbo-fp16",
+      "hfLastModified": "2025-12-15T18:22:54.000Z",
+      "hfDownloads": 57
     }
   },
   {
-    "modelId": "whisper-medium-mlx-8bit",
+    "modelId": "whisper-medium-4bit",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -913,14 +598,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-8bit/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-4bit/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-8bit/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-4bit/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -931,336 +616,21 @@
       "minRamMB": 4096,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
       "family": "medium",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:45:18.000Z",
-      "hfDownloads": 76
-    }
-  },
-  {
-    "modelId": "whisper-medium-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "medium",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:35:53.000Z",
-      "hfDownloads": 19
-    }
-  },
-  {
-    "modelId": "whisper-medium-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "medium",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium-mlx-q4",
-      "hfLastModified": "2024-03-09T01:58:15.000Z",
-      "hfDownloads": 39
-    }
-  },
-  {
-    "modelId": "whisper-medium.en-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "medium",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium.en-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:45:33.000Z",
-      "hfDownloads": 4
-    }
-  },
-  {
-    "modelId": "whisper-medium.en-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "medium",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium.en-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:51:44.000Z",
-      "hfDownloads": 7
-    }
-  },
-  {
-    "modelId": "whisper-medium.en-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium.en-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "medium",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-medium.en-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:57:35.000Z",
-      "hfDownloads": 16
-    }
-  },
-  {
-    "modelId": "whisper-small-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small-mlx",
-      "hfLastModified": "2024-03-09T03:34:26.000Z",
-      "hfDownloads": 49157
-    }
-  },
-  {
-    "modelId": "whisper-small-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
       "lang": "multilingual",
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:34:30.000Z",
-      "hfDownloads": 66
+      "hfRepoId": "mlx-community/whisper-medium-4bit",
+      "hfLastModified": "2025-12-15T18:08:05.000Z",
+      "hfDownloads": 13
     }
   },
   {
-    "modelId": "whisper-small-mlx-8bit",
+    "modelId": "whisper-medium-8bit",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -1273,14 +643,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-8bit/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-8bit/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-8bit/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-8bit/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -1288,24 +658,24 @@
     ],
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 2048,
+      "minRamMB": 4096,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
-      "family": "small",
+      "family": "medium",
       "lang": "multilingual",
       "quantized": true,
       "quant_type": "8bit",
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:36:38.000Z",
-      "hfDownloads": 607
+      "hfRepoId": "mlx-community/whisper-medium-8bit",
+      "hfLastModified": "2025-12-15T18:05:57.000Z",
+      "hfDownloads": 6
     }
   },
   {
-    "modelId": "whisper-small-mlx-fp32",
+    "modelId": "whisper-medium-fp16",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -1318,14 +688,14 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-fp32/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-fp16/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-fp32/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-fp16/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -1336,696 +706,21 @@
       "minRamMB": 8192,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
-      "family": "small",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:35:24.000Z",
-      "hfDownloads": 18
-    }
-  },
-  {
-    "modelId": "whisper-small-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:38.000Z",
-      "hfDownloads": 27
-    }
-  },
-  {
-    "modelId": "whisper-small.en-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small.en-mlx",
-      "hfLastModified": "2024-03-09T03:36:42.000Z",
-      "hfDownloads": 114
-    }
-  },
-  {
-    "modelId": "whisper-small.en-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small.en-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:36:46.000Z",
-      "hfDownloads": 7
-    }
-  },
-  {
-    "modelId": "whisper-small.en-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small.en-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:38:55.000Z",
-      "hfDownloads": 8
-    }
-  },
-  {
-    "modelId": "whisper-small.en-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 8192,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small.en-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:35:35.000Z",
-      "hfDownloads": 7
-    }
-  },
-  {
-    "modelId": "whisper-small.en-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small.en-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "small",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-small.en-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:50.000Z",
-      "hfDownloads": 11
-    }
-  },
-  {
-    "modelId": "whisper-tiny-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
+      "family": "medium",
       "lang": "multilingual",
       "quantized": false,
       "quant_type": null,
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny-mlx",
-      "hfLastModified": "2024-03-09T03:32:25.000Z",
-      "hfDownloads": 600
-    }
-  },
-  {
-    "modelId": "whisper-tiny-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:32:30.000Z",
-      "hfDownloads": 22
-    }
-  },
-  {
-    "modelId": "whisper-tiny-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "multilingual",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:34:53.000Z",
-      "hfDownloads": 9
-    }
-  },
-  {
-    "modelId": "whisper-tiny-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "multilingual",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:03.000Z",
-      "hfDownloads": 49
-    }
-  },
-  {
-    "modelId": "whisper-tiny.en-mlx",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 2048,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": null,
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny.en-mlx",
-      "hfLastModified": "2024-03-09T03:32:32.000Z",
-      "hfDownloads": 212
-    }
-  },
-  {
-    "modelId": "whisper-tiny.en-mlx-4bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-4bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-4bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "4bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny.en-mlx-4bit",
-      "hfLastModified": "2024-03-09T03:32:34.000Z",
-      "hfDownloads": 4
-    }
-  },
-  {
-    "modelId": "whisper-tiny.en-mlx-8bit",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-8bit/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-8bit/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "8bit",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny.en-mlx-8bit",
-      "hfLastModified": "2024-03-09T03:32:36.000Z",
-      "hfDownloads": 5
-    }
-  },
-  {
-    "modelId": "whisper-tiny.en-mlx-fp32",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-fp32/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-fp32/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 4096,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "english",
-      "quantized": false,
-      "quant_type": "fp32",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny.en-mlx-fp32",
-      "hfLastModified": "2024-03-09T02:34:59.000Z",
-      "hfDownloads": 5
-    }
-  },
-  {
-    "modelId": "whisper-tiny.en-mlx-q4",
-    "moduleId": "module.asr",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "macos"
-    ],
-    "files": [
-      {
-        "path": "config.json",
-        "role": "config",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-q4/resolve/main/config.json"
-      },
-      {
-        "path": "weights.npz",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny.en-mlx-q4/resolve/main/weights.npz"
-      }
-    ],
-    "recommendedEngines": [
-      "mlx"
-    ],
-    "constraints": {
-      "minOs": "17.0.0",
-      "minRamMB": 1024,
-      "supportsStreaming": false
-    },
-    "license": "unknown",
-    "_meta": {
-      "family": "tiny",
-      "lang": "english",
-      "quantized": true,
-      "quant_type": "q4",
-      "variant": null,
-      "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-tiny.en-mlx-q4",
-      "hfLastModified": "2024-03-09T01:57:10.000Z",
+      "hfRepoId": "mlx-community/whisper-medium-fp16",
+      "hfLastModified": "2025-12-15T18:03:52.000Z",
       "hfDownloads": 10
     }
   },
   {
-    "modelId": "whisper-turbo",
+    "modelId": "whisper-small-4bit",
     "moduleId": "module.asr",
     "version": "1.0.0",
     "platforms": [
@@ -2038,14 +733,194 @@
         "role": "config",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-turbo/resolve/main/config.json"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-4bit/resolve/main/config.json"
       },
       {
-        "path": "weights.npz",
+        "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
         "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/whisper-turbo/resolve/main/weights.npz"
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-small-4bit",
+      "hfLastModified": "2025-12-15T17:56:26.000Z",
+      "hfDownloads": 51
+    }
+  },
+  {
+    "modelId": "whisper-small-8bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-8bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "8bit",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-small-8bit",
+      "hfLastModified": "2025-12-15T17:52:57.000Z",
+      "hfDownloads": 7
+    }
+  },
+  {
+    "modelId": "whisper-small-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-fp16/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-small-fp16",
+      "hfLastModified": "2025-12-15T17:51:52.000Z",
+      "hfDownloads": 14
+    }
+  },
+  {
+    "modelId": "whisper-small-khmer-mlx-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "weights.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp16/resolve/main/weights.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-small-khmer-mlx-fp16",
+      "hfLastModified": "2025-10-25T14:55:15.000Z",
+      "hfDownloads": 5
+    }
+  },
+  {
+    "modelId": "whisper-small-khmer-mlx-fp32",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp32/resolve/main/config.json"
+      },
+      {
+        "path": "weights.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp32/resolve/main/weights.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -2056,17 +931,287 @@
       "minRamMB": 8192,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
-      "family": "turbo",
+      "family": "small",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": "fp32",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-small-khmer-mlx-fp32",
+      "hfLastModified": "2025-10-25T14:53:06.000Z",
+      "hfDownloads": 12
+    }
+  },
+  {
+    "modelId": "whisper-tiny-4bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-tiny-4bit",
+      "hfLastModified": "2025-12-15T17:42:22.000Z",
+      "hfDownloads": 139
+    }
+  },
+  {
+    "modelId": "whisper-tiny-8bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-8bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "8bit",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-tiny-8bit",
+      "hfLastModified": "2025-12-15T17:41:34.000Z",
+      "hfDownloads": 6
+    }
+  },
+  {
+    "modelId": "whisper-tiny-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-fp16/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "tiny",
       "lang": "multilingual",
       "quantized": false,
       "quant_type": null,
       "variant": null,
       "totalBytes": 0,
-      "hfRepoId": "mlx-community/whisper-turbo",
-      "hfLastModified": "2024-10-01T13:22:58.000Z",
-      "hfDownloads": 537
+      "hfRepoId": "mlx-community/whisper-tiny-fp16",
+      "hfLastModified": "2025-12-15T17:40:26.000Z",
+      "hfDownloads": 33
+    }
+  },
+  {
+    "modelId": "whisper-tiny-khmer-mlx-fp16",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp16/resolve/main/config.json"
+      },
+      {
+        "path": "weights.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp16/resolve/main/weights.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 2048,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": null,
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-tiny-khmer-mlx-fp16",
+      "hfLastModified": "2025-10-25T14:54:37.000Z",
+      "hfDownloads": 6
+    }
+  },
+  {
+    "modelId": "whisper-tiny-khmer-mlx-fp32",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp32/resolve/main/config.json"
+      },
+      {
+        "path": "weights.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp32/resolve/main/weights.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": false,
+      "quant_type": "fp32",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-tiny-khmer-mlx-fp32",
+      "hfLastModified": "2025-10-25T14:53:47.000Z",
+      "hfDownloads": 12
+    }
+  },
+  {
+    "modelId": "whisper-tiny-mlx-4bit",
+    "moduleId": "module.asr",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 1024,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "tiny",
+      "lang": "multilingual",
+      "quantized": true,
+      "quant_type": "4bit",
+      "variant": null,
+      "totalBytes": 0,
+      "hfRepoId": "mlx-community/whisper-tiny-mlx-4bit",
+      "hfLastModified": "2024-01-28T21:38:38.000Z",
+      "hfDownloads": 16
     }
   }
 ]
