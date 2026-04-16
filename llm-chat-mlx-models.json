@@ -1,0 +1,191 @@
+[
+  {
+    "modelId": "qwen2.5-1.5b-instruct-4bit",
+    "moduleId": "module.llm.chat",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 2048,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 4096,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "qwen-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "chat"
+      ],
+      "promptProfiles": {
+        "chat": "qwen.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 4096,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "qwen",
+      "quantized": true,
+      "quant_type": "4bit",
+      "parameterScaleB": 1.5,
+      "hfRepoId": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+      "hfLastModified": "",
+      "hfDownloads": 0,
+      "totalBytes": 6144
+    }
+  },
+  {
+    "modelId": "qwen2.5-3b-instruct-4bit",
+    "moduleId": "module.llm.chat",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 2048,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 4096,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "qwen-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "chat"
+      ],
+      "promptProfiles": {
+        "chat": "qwen.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 6144,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "qwen",
+      "quantized": true,
+      "quant_type": "4bit",
+      "parameterScaleB": 3.0,
+      "hfRepoId": "mlx-community/Qwen2.5-3B-Instruct-4bit",
+      "hfLastModified": "",
+      "hfDownloads": 0,
+      "totalBytes": 6144
+    }
+  },
+  {
+    "modelId": "qwen2.5-7b-instruct-4bit",
+    "moduleId": "module.llm.chat",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 2048,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 4096,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "qwen-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "chat"
+      ],
+      "promptProfiles": {
+        "chat": "qwen.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 12288,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "qwen",
+      "quantized": true,
+      "quant_type": "4bit",
+      "parameterScaleB": 7.0,
+      "hfRepoId": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+      "hfLastModified": "",
+      "hfDownloads": 0,
+      "totalBytes": 6144
+    }
+  }
+]

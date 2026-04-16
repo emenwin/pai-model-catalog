@@ -12,6 +12,8 @@ Clients fetch `catalog-index.json` as the entry point, then resolve each `listRe
 catalog-index.json          # Top-level index — one entry per module × engine
 asr-mlx-models.json         # ASR manifests for the MLX engine
 asr-whispercpp-models.json  # ASR manifests for the whisper.cpp engine
+llm-shared-mlx-models.json  # Gemma shared LLM manifests for MLX
+llm-chat-mlx-models.json    # Qwen chat-only manifests for MLX
 ```
 
 ---
@@ -24,6 +26,8 @@ asr-whispercpp-models.json  # ASR manifests for the whisper.cpp engine
 catalog-index.json
   └─ items[].listRef.url  →  ./asr-mlx-models.json
                           →  ./asr-whispercpp-models.json
+                          →  ./llm-shared-mlx-models.json
+                          →  ./llm-chat-mlx-models.json
                           →  ...
 ```
 
@@ -32,6 +36,7 @@ catalog-index.json
 3. For each matched item, client resolves `listRef.url` relative to the index URL and fetches the model list.
 4. Client verifies the downloaded file against `listRef.sha256` (when non-empty).
 5. Manifests are registered into the local model registry.
+6. Shared Gemma manifests can then be projected to Translate and Chat via `capabilities.supportedModules`.
 
 ### Resolving relative URLs
 
@@ -69,11 +74,15 @@ Each file is a JSON array of manifest objects:
 | `version` | string | Semver |
 | `platforms` | string[] | Supported platforms |
 | `files[].path` | string | Relative path within the model bundle |
-| `files[].role` | string | `weights`, `config`, `coreml_encoder`, … |
+| `files[].role` | string | `weights`, `config`, `tokenizer`, … |
 | `files[].sha256` | string | SHA-256 of the file |
 | `files[].sizeBytes` | number | File size in bytes |
 | `files[].downloadUrl` | string | Absolute download URL (Hugging Face, CDN, …) |
 | `recommendedEngines` | string[] | Preferred engines in priority order |
+| `backendKind` | string | Backend family such as `mlx`, `gemma-mlx`, `qwen-mlx` |
+| `capabilities.supportedModules` | string[] | Functional projections, e.g. Translate + Chat |
+| `capabilities.taskProfiles` | string[] | Supported task kinds |
+| `capabilities.promptProfiles` | object | Prompt profile mapping used by runtime backends |
 | `constraints.minOs` | string | Minimum OS version |
 | `constraints.minRamMB` | number | Minimum RAM in MB |
 | `constraints.supportsStreaming` | boolean | Whether streaming inference is supported |

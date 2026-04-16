@@ -1,0 +1,134 @@
+[
+  {
+    "modelId": "gemma-3-1b-it-4bit",
+    "moduleId": "module.llm.shared",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 2048,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 4096,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "gemma-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.translation",
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "translation",
+        "chat"
+      ],
+      "promptProfiles": {
+        "translation": "gemma.translation.v1",
+        "chat": "gemma.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 3072,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "gemma",
+      "quantized": true,
+      "quant_type": "4bit",
+      "parameterScaleB": 1.0,
+      "hfRepoId": "mlx-community/gemma-3-1b-it-4bit",
+      "hfLastModified": "",
+      "hfDownloads": 0,
+      "totalBytes": 6144
+    }
+  },
+  {
+    "modelId": "gemma-3-4b-it-4bit",
+    "moduleId": "module.llm.shared",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 2048,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 4096,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 0,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/model.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "gemma-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.translation",
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "translation",
+        "chat"
+      ],
+      "promptProfiles": {
+        "translation": "gemma.translation.v1",
+        "chat": "gemma.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 8192,
+      "supportsStreaming": false
+    },
+    "license": "unknown",
+    "_meta": {
+      "family": "gemma",
+      "quantized": true,
+      "quant_type": "4bit",
+      "parameterScaleB": 4.0,
+      "hfRepoId": "mlx-community/gemma-3-4b-it-4bit",
+      "hfLastModified": "",
+      "hfDownloads": 0,
+      "totalBytes": 6144
+    }
+  }
+]
