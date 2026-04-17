@@ -1,6 +1,6 @@
 {
-  "catalogVersion": "2026.04.15-001",
-  "generatedAt": "2026-04-15T05:15:53Z",
+  "catalogVersion": "2026.04.17-001",
+  "generatedAt": "2026-04-17T07:40:15Z",
   "ttlSeconds": 86400,
   "items": [
     {
@@ -12,7 +12,8 @@
       ],
       "listRef": {
         "url": "./asr-mlx-models.json",
-        "sha256": ""
+        "sha256": "",
+        "totalSizeBytes": 18805017601
       }
     },
     {
@@ -24,7 +25,8 @@
       ],
       "listRef": {
         "url": "./asr-whispercpp-models.json",
-        "sha256": ""
+        "sha256": "",
+        "totalSizeBytes": 31493531425
       }
     },
     {
@@ -36,7 +38,8 @@
       ],
       "listRef": {
         "url": "./llm-chat-mlx-models.json",
-        "sha256": ""
+        "sha256": "",
+        "totalSizeBytes": 49715989811
       }
     },
     {
@@ -48,7 +51,8 @@
       ],
       "listRef": {
         "url": "./llm-shared-mlx-models.json",
-        "sha256": ""
+        "sha256": "",
+        "totalSizeBytes": 27618941077
       }
     }
   ]

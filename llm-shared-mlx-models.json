@@ -1,6 +1,6 @@
 [
   {
-    "modelId": "gemma-3-1b-it-4bit",
+    "modelId": "gemma-4-e2b-it-4bit",
     "moduleId": "module.llm.shared",
     "version": "1.0.0",
     "platforms": [
@@ -12,22 +12,36 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 2048,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/config.json"
+        "sizeBytes": 5996,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "generation_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 208,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit/resolve/main/generation_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
         "sha256": "",
-        "sizeBytes": 4096,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/tokenizer.json"
+        "sizeBytes": 32169626,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 2095,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit/resolve/main/tokenizer_config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-1b-it-4bit/resolve/main/model.safetensors"
+        "sizeBytes": 3581101896,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-4bit/resolve/main/model.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -50,23 +64,23 @@
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 3072,
+      "minRamMB": 5120,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "apache-2.0",
     "_meta": {
       "family": "gemma",
       "quantized": true,
       "quant_type": "4bit",
-      "parameterScaleB": 1.0,
-      "hfRepoId": "mlx-community/gemma-3-1b-it-4bit",
-      "hfLastModified": "",
-      "hfDownloads": 0,
-      "totalBytes": 6144
+      "parameterScaleB": 2.0,
+      "hfRepoId": "mlx-community/gemma-4-e2b-it-4bit",
+      "hfLastModified": "2026-04-13T13:07:28.000Z",
+      "hfDownloads": 157396,
+      "totalBytes": 3613279821
     }
   },
   {
-    "modelId": "gemma-3-4b-it-4bit",
+    "modelId": "gemma-4-e2b-it-8bit",
     "moduleId": "module.llm.shared",
     "version": "1.0.0",
     "platforms": [
@@ -78,22 +92,231 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 2048,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/config.json"
+        "sizeBytes": 5996,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "generation_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 208,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/generation_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
         "sha256": "",
-        "sizeBytes": 4096,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/tokenizer.json"
+        "sizeBytes": 32169626,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/tokenizer.json"
       },
       {
-        "path": "model.safetensors",
+        "path": "tokenizer_config.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 2095,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/tokenizer_config.json"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
-        "downloadUrl": "https://huggingface.co/mlx-community/gemma-3-4b-it-4bit/resolve/main/model.safetensors"
+        "sizeBytes": 5367135201,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/model-00001-of-00002.safetensors"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 532432577,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-8bit/resolve/main/model-00002-of-00002.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "gemma-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.translation",
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "translation",
+        "chat"
+      ],
+      "promptProfiles": {
+        "translation": "gemma.translation.v1",
+        "chat": "gemma.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 5120,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "gemma",
+      "quantized": true,
+      "quant_type": "8bit",
+      "parameterScaleB": 2.0,
+      "hfRepoId": "mlx-community/gemma-4-e2b-it-8bit",
+      "hfLastModified": "2026-04-13T13:07:47.000Z",
+      "hfDownloads": 2088,
+      "totalBytes": 5931745703
+    }
+  },
+  {
+    "modelId": "gemma-4-e2b-it-bf16",
+    "moduleId": "module.llm.shared",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 5791,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/config.json"
+      },
+      {
+        "path": "generation_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 208,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/generation_config.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 32169626,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 2095,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/tokenizer_config.json"
+      },
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 4569831590,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/model-00001-of-00003.safetensors"
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 5366705230,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/model-00002-of-00003.safetensors"
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 310074804,
+        "downloadUrl": "https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16/resolve/main/model-00003-of-00003.safetensors"
+      }
+    ],
+    "recommendedEngines": [
+      "mlx"
+    ],
+    "backendKind": "gemma-mlx",
+    "capabilities": {
+      "supportedModules": [
+        "module.translation",
+        "module.llm.chat"
+      ],
+      "taskProfiles": [
+        "translation",
+        "chat"
+      ],
+      "promptProfiles": {
+        "translation": "gemma.translation.v1",
+        "chat": "gemma.chat.v1"
+      }
+    },
+    "constraints": {
+      "minOs": "17.0.0",
+      "minRamMB": 5120,
+      "supportsStreaming": false
+    },
+    "license": "apache-2.0",
+    "_meta": {
+      "family": "gemma",
+      "quantized": false,
+      "quant_type": null,
+      "parameterScaleB": 2.0,
+      "hfRepoId": "mlx-community/gemma-4-e2b-it-bf16",
+      "hfLastModified": "2026-04-13T13:07:54.000Z",
+      "hfDownloads": 1525,
+      "totalBytes": 10278789344
+    }
+  },
+  {
+    "modelId": "text-to-cypher-gemma-3-4b-instruct-mlx-fp16",
+    "moduleId": "module.llm.shared",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "macos"
+    ],
+    "files": [
+      {
+        "path": "config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1329,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/config.json"
+      },
+      {
+        "path": "generation_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 210,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/generation_config.json"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 670,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/special_tokens_map.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 33384568,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 1155395,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/tokenizer_config.json"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 5338068506,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/model-00001-of-00002.safetensors"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "",
+        "sizeBytes": 2422515531,
+        "downloadUrl": "https://huggingface.co/mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16/resolve/main/model-00002-of-00002.safetensors"
       }
     ],
     "recommendedEngines": [
@@ -119,16 +342,16 @@
       "minRamMB": 8192,
       "supportsStreaming": false
     },
-    "license": "unknown",
+    "license": "gemma",
     "_meta": {
       "family": "gemma",
-      "quantized": true,
-      "quant_type": "4bit",
+      "quantized": false,
+      "quant_type": null,
       "parameterScaleB": 4.0,
-      "hfRepoId": "mlx-community/gemma-3-4b-it-4bit",
-      "hfLastModified": "",
-      "hfDownloads": 0,
-      "totalBytes": 6144
+      "hfRepoId": "mlx-community/text-to-cypher-Gemma-3-4B-Instruct-MLX-FP16",
+      "hfLastModified": "2025-11-09T07:04:55.000Z",
+      "hfDownloads": 82,
+      "totalBytes": 7795126209
     }
   }
 ]

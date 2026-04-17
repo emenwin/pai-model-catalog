@@ -12,14 +12,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 335,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 42215979,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -38,10 +38,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 42216314,
       "hfRepoId": "mlx-community/whisper-base-4bit",
       "hfLastModified": "2025-12-15T17:48:42.000Z",
-      "hfDownloads": 513
+      "hfDownloads": 90
     }
   },
   {
@@ -57,14 +57,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 335,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 77513748,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -83,10 +83,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 77514083,
       "hfRepoId": "mlx-community/whisper-base-8bit",
       "hfLastModified": "2025-12-15T17:47:22.000Z",
-      "hfDownloads": 7
+      "hfDownloads": 6
     }
   },
   {
@@ -102,14 +102,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 143676897,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -128,10 +128,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 143677159,
       "hfRepoId": "mlx-community/whisper-base-fp16",
       "hfLastModified": "2025-12-15T17:44:54.000Z",
-      "hfDownloads": 58
+      "hfDownloads": 10
     }
   },
   {
@@ -147,14 +147,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp16/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 143676909,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp16/resolve/main/weights.safetensors"
       }
     ],
@@ -173,10 +173,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 143677171,
       "hfRepoId": "mlx-community/whisper-base-khmer-mlx-fp16",
       "hfLastModified": "2025-10-25T14:55:48.000Z",
-      "hfDownloads": 7
+      "hfDownloads": 4
     }
   },
   {
@@ -192,14 +192,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp32/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 287328857,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-base-khmer-mlx-fp32/resolve/main/weights.safetensors"
       }
     ],
@@ -218,10 +218,10 @@
       "quantized": false,
       "quant_type": "fp32",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 287329119,
       "hfRepoId": "mlx-community/whisper-base-khmer-mlx-fp32",
       "hfLastModified": "2025-10-25T14:52:14.000Z",
-      "hfDownloads": 10
+      "hfDownloads": 4
     }
   },
   {
@@ -237,14 +237,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 342,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 877691017,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -263,10 +263,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": "v3-4bit",
-      "totalBytes": 0,
+      "totalBytes": 877691359,
       "hfRepoId": "mlx-community/whisper-large-v3-4bit",
       "hfLastModified": "2025-12-15T18:21:37.000Z",
-      "hfDownloads": 97
+      "hfDownloads": 85
     }
   },
   {
@@ -282,14 +282,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 342,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 1644890344,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -308,10 +308,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": "v3-8bit",
-      "totalBytes": 0,
+      "totalBytes": 1644890686,
       "hfRepoId": "mlx-community/whisper-large-v3-8bit",
       "hfLastModified": "2025-12-15T18:18:25.000Z",
-      "hfDownloads": 24
+      "hfDownloads": 422
     }
   },
   {
@@ -327,14 +327,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 269,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 3083275629,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -353,10 +353,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": "v3-fp16",
-      "totalBytes": 0,
+      "totalBytes": 3083275898,
       "hfRepoId": "mlx-community/whisper-large-v3-fp16",
       "hfLastModified": "2025-12-15T18:14:38.000Z",
-      "hfDownloads": 65
+      "hfDownloads": 127
     }
   },
   {
@@ -372,14 +372,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 269,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-lv-late-cv19/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 3083280590,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-lv-late-cv19/resolve/main/model.safetensors"
       }
     ],
@@ -398,10 +398,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": "v3-lv",
-      "totalBytes": 0,
+      "totalBytes": 3083280859,
       "hfRepoId": "mlx-community/whisper-large-v3-lv-late-cv19",
       "hfLastModified": "2026-02-05T00:47:24.000Z",
-      "hfDownloads": 173
+      "hfDownloads": 42
     }
   },
   {
@@ -417,14 +417,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 342,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 973124280,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -443,10 +443,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": "v3-mlx",
-      "totalBytes": 0,
+      "totalBytes": 973124622,
       "hfRepoId": "mlx-community/whisper-large-v3-mlx-4bit",
       "hfLastModified": "2024-01-28T21:41:14.000Z",
-      "hfDownloads": 130
+      "hfDownloads": 173
     }
   },
   {
@@ -462,14 +462,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 341,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 463462982,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -488,10 +488,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": "v3-turbo",
-      "totalBytes": 0,
+      "totalBytes": 463463323,
       "hfRepoId": "mlx-community/whisper-large-v3-turbo-4bit",
       "hfLastModified": "2025-12-15T18:25:03.000Z",
-      "hfDownloads": 625
+      "hfDownloads": 798
     }
   },
   {
@@ -507,14 +507,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 341,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 863659156,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -533,10 +533,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": "v3-turbo",
-      "totalBytes": 0,
+      "totalBytes": 863659497,
       "hfRepoId": "mlx-community/whisper-large-v3-turbo-8bit",
       "hfLastModified": "2025-12-15T18:24:11.000Z",
-      "hfDownloads": 106
+      "hfDownloads": 129
     }
   },
   {
@@ -552,14 +552,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 268,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 1613977612,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -578,10 +578,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": "v3-turbo",
-      "totalBytes": 0,
+      "totalBytes": 1613977880,
       "hfRepoId": "mlx-community/whisper-large-v3-turbo-fp16",
       "hfLastModified": "2025-12-15T18:22:54.000Z",
-      "hfDownloads": 57
+      "hfDownloads": 51
     }
   },
   {
@@ -597,14 +597,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 341,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 435555727,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -623,10 +623,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 435556068,
       "hfRepoId": "mlx-community/whisper-medium-4bit",
       "hfLastModified": "2025-12-15T18:08:05.000Z",
-      "hfDownloads": 13
+      "hfDownloads": 9
     }
   },
   {
@@ -642,14 +642,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 341,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 814432665,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -668,10 +668,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 814433006,
       "hfRepoId": "mlx-community/whisper-medium-8bit",
       "hfLastModified": "2025-12-15T18:05:57.000Z",
-      "hfDownloads": 6
+      "hfDownloads": 7
     }
   },
   {
@@ -687,14 +687,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 268,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 1524744217,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-medium-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -713,10 +713,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 1524744485,
       "hfRepoId": "mlx-community/whisper-medium-fp16",
       "hfLastModified": "2025-12-15T18:03:52.000Z",
-      "hfDownloads": 10
+      "hfDownloads": 9
     }
   },
   {
@@ -732,14 +732,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 339,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 139111057,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -758,10 +758,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 139111396,
       "hfRepoId": "mlx-community/whisper-small-4bit",
       "hfLastModified": "2025-12-15T17:56:26.000Z",
-      "hfDownloads": 51
+      "hfDownloads": 24
     }
   },
   {
@@ -777,14 +777,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 339,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 258118408,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -803,10 +803,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 258118747,
       "hfRepoId": "mlx-community/whisper-small-8bit",
       "hfLastModified": "2025-12-15T17:52:57.000Z",
-      "hfDownloads": 7
+      "hfDownloads": 5
     }
   },
   {
@@ -822,14 +822,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 266,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 481215362,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -848,10 +848,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 481215628,
       "hfRepoId": "mlx-community/whisper-small-fp16",
       "hfLastModified": "2025-12-15T17:51:52.000Z",
-      "hfDownloads": 14
+      "hfDownloads": 16
     }
   },
   {
@@ -867,14 +867,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 266,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp16/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 481215374,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp16/resolve/main/weights.safetensors"
       }
     ],
@@ -893,10 +893,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 481215640,
       "hfRepoId": "mlx-community/whisper-small-khmer-mlx-fp16",
       "hfLastModified": "2025-10-25T14:55:15.000Z",
-      "hfDownloads": 5
+      "hfDownloads": 11
     }
   },
   {
@@ -912,14 +912,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 266,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp32/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 962381342,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-small-khmer-mlx-fp32/resolve/main/weights.safetensors"
       }
     ],
@@ -938,10 +938,10 @@
       "quantized": false,
       "quant_type": "fp32",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 962381608,
       "hfRepoId": "mlx-community/whisper-small-khmer-mlx-fp32",
       "hfLastModified": "2025-10-25T14:53:06.000Z",
-      "hfDownloads": 12
+      "hfDownloads": 9
     }
   },
   {
@@ -957,14 +957,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 335,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 22029431,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -983,10 +983,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 22029766,
       "hfRepoId": "mlx-community/whisper-tiny-4bit",
       "hfLastModified": "2025-12-15T17:42:22.000Z",
-      "hfDownloads": 139
+      "hfDownloads": 23
     }
   },
   {
@@ -1002,14 +1002,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 335,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-8bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 40245083,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-8bit/resolve/main/model.safetensors"
       }
     ],
@@ -1028,10 +1028,10 @@
       "quantized": true,
       "quant_type": "8bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 40245418,
       "hfRepoId": "mlx-community/whisper-tiny-8bit",
       "hfLastModified": "2025-12-15T17:41:34.000Z",
-      "hfDownloads": 6
+      "hfDownloads": 2
     }
   },
   {
@@ -1047,14 +1047,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-fp16/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 74386126,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-fp16/resolve/main/model.safetensors"
       }
     ],
@@ -1073,10 +1073,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 74386388,
       "hfRepoId": "mlx-community/whisper-tiny-fp16",
       "hfLastModified": "2025-12-15T17:40:26.000Z",
-      "hfDownloads": 33
+      "hfDownloads": 2
     }
   },
   {
@@ -1092,14 +1092,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp16/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 74386138,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp16/resolve/main/weights.safetensors"
       }
     ],
@@ -1118,10 +1118,10 @@
       "quantized": false,
       "quant_type": null,
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 74386400,
       "hfRepoId": "mlx-community/whisper-tiny-khmer-mlx-fp16",
       "hfLastModified": "2025-10-25T14:54:37.000Z",
-      "hfDownloads": 6
+      "hfDownloads": 11
     }
   },
   {
@@ -1137,14 +1137,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 262,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp32/resolve/main/config.json"
       },
       {
         "path": "weights.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 148755675,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-khmer-mlx-fp32/resolve/main/weights.safetensors"
       }
     ],
@@ -1163,10 +1163,10 @@
       "quantized": false,
       "quant_type": "fp32",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 148755937,
       "hfRepoId": "mlx-community/whisper-tiny-khmer-mlx-fp32",
       "hfLastModified": "2025-10-25T14:53:47.000Z",
-      "hfDownloads": 12
+      "hfDownloads": 19
     }
   },
   {
@@ -1182,14 +1182,14 @@
         "path": "config.json",
         "role": "config",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 335,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-4bit/resolve/main/config.json"
       },
       {
         "path": "model.safetensors",
         "role": "weights",
         "sha256": "",
-        "sizeBytes": 0,
+        "sizeBytes": 50658809,
         "downloadUrl": "https://huggingface.co/mlx-community/whisper-tiny-mlx-4bit/resolve/main/model.safetensors"
       }
     ],
@@ -1208,10 +1208,10 @@
       "quantized": true,
       "quant_type": "4bit",
       "variant": null,
-      "totalBytes": 0,
+      "totalBytes": 50659144,
       "hfRepoId": "mlx-community/whisper-tiny-mlx-4bit",
       "hfLastModified": "2024-01-28T21:38:38.000Z",
-      "hfDownloads": 16
+      "hfDownloads": 22
     }
   }
 ]
