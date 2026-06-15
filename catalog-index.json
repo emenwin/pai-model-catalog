@@ -1,6 +1,6 @@
 {
-  "catalogVersion": "2026.04.17-001",
-  "generatedAt": "2026-04-17T07:40:15Z",
+  "catalogVersion": "2026.06.15-001",
+  "generatedAt": "2026-06-15T00:00:00Z",
   "ttlSeconds": 86400,
   "items": [
     {
@@ -31,6 +31,10 @@
     },
     {
       "moduleId": "module.llm.chat",
+      "supportedModules": [
+        "module.llm.chat",
+        "module.agent"
+      ],
       "engine": "mlx",
       "platforms": [
         "ios",
@@ -39,11 +43,16 @@
       "listRef": {
         "url": "./llm-chat-mlx-models.json",
         "sha256": "",
-        "totalSizeBytes": 49715989811
+        "totalSizeBytes": 49777296646
       }
     },
     {
       "moduleId": "module.llm.shared",
+      "supportedModules": [
+        "module.translation",
+        "module.llm.chat",
+        "module.agent"
+      ],
       "engine": "mlx",
       "platforms": [
         "ios",
@@ -52,7 +61,7 @@
       "listRef": {
         "url": "./llm-shared-mlx-models.json",
         "sha256": "",
-        "totalSizeBytes": 27618941077
+        "totalSizeBytes": 19824575448
       }
     }
   ]

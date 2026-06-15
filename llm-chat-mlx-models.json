@@ -261,17 +261,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3112,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "f5a0d9dd3efa73510542a8023d610ff26be2b4b020d181cfc4bedaa1fcc5dd9e",
+        "sizeBytes": 625229487,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 71473,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/tokenizer.json"
       },
       {
@@ -279,14 +356,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 625229487,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-4bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-4bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -295,30 +397,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
       "minRamMB": 3072,
-      "supportsStreaming": false
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "4bit",
-      "parameterScaleB": 0.8,
       "hfRepoId": "mlx-community/Qwen3.5-0.8B-4bit",
-      "hfLastModified": "2026-03-02T16:08:30.000Z",
-      "hfDownloads": 6392,
-      "totalBytes": 645223081
+      "hfLastModified": "2026-03-02T16:08:30+00:00",
+      "hfDownloads": 1318,
+      "totalBytes": 652027143
     }
   },
   {
@@ -331,17 +437,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3112,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "9a887c5731520e33bbd324378ecb7b560c1f750af16a6dc28229d500304e656c",
+        "sizeBytes": 1001176958,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 71474,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/tokenizer.json"
       },
       {
@@ -349,14 +532,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 1001176958,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-8bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-8bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -365,30 +573,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
       "minRamMB": 3072,
-      "supportsStreaming": false
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "8bit",
-      "parameterScaleB": 0.8,
       "hfRepoId": "mlx-community/Qwen3.5-0.8B-8bit",
-      "hfLastModified": "2026-03-02T16:09:52.000Z",
-      "hfDownloads": 14369,
-      "totalBytes": 1021170552
+      "hfLastModified": "2026-03-02T16:09:52+00:00",
+      "hfDownloads": 3982,
+      "totalBytes": 1027974615
     }
   },
   {
@@ -401,17 +613,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 2907,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "46179bc9809bd667b67a0847af7a3d410fe163f1371eb8f4cc2dedc167072666",
+        "sizeBytes": 1706030684,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 38712,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/tokenizer.json"
       },
       {
@@ -419,14 +708,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 1706030684,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-0.8B-bf16",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -435,30 +749,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
       "minRamMB": 3072,
-      "supportsStreaming": false
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": false,
-      "quant_type": null,
-      "parameterScaleB": 0.8,
+      "family": "qwen3.5",
+      "quant_type": "bf16",
       "hfRepoId": "mlx-community/Qwen3.5-0.8B-bf16",
-      "hfLastModified": "2026-03-02T16:10:08.000Z",
-      "hfDownloads": 593,
-      "totalBytes": 1726024073
+      "hfLastModified": "2026-03-02T16:10:08+00:00",
+      "hfDownloads": 67,
+      "totalBytes": 1732795374
     }
   },
   {
@@ -471,17 +789,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3113,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "713fe7e5d3c3965f7106b0d0ee17615f7869c23c8d327996df8c1196fbcf07d5",
+        "sizeBytes": 1722271785,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 81722,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/tokenizer.json"
       },
       {
@@ -489,14 +884,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 1722271785,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-4bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-4bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -505,30 +925,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 5120,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "4bit",
-      "parameterScaleB": 2.0,
       "hfRepoId": "mlx-community/Qwen3.5-2B-4bit",
-      "hfLastModified": "2026-03-02T16:14:15.000Z",
-      "hfDownloads": 10285,
-      "totalBytes": 1742265380
+      "hfLastModified": "2026-03-02T16:14:15+00:00",
+      "hfDownloads": 8925,
+      "totalBytes": 1749079691
     }
   },
   {
@@ -541,17 +965,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3113,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "5b298a9f14443a30250f9164e322234f80b0f651665fc7db09a0b65e2167bdd8",
+        "sizeBytes": 2662910403,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 81722,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/tokenizer.json"
       },
       {
@@ -559,14 +1060,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 2662910403,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-8bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-8bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -575,30 +1101,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 5120,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "8bit",
-      "parameterScaleB": 2.0,
       "hfRepoId": "mlx-community/Qwen3.5-2B-8bit",
-      "hfLastModified": "2026-03-02T16:16:41.000Z",
-      "hfDownloads": 731,
-      "totalBytes": 2682903998
+      "hfLastModified": "2026-03-02T16:16:41+00:00",
+      "hfDownloads": 164,
+      "totalBytes": 2689718309
     }
   },
   {
@@ -611,17 +1141,94 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7755,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 2908,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "role": "weights",
+        "sha256": "ae1fc68e515bf302d85011723ade12d552a3fb12b6ccc8f2e1a10e87f6fc3577",
+        "sizeBytes": 4426559145,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "model.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/model.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 48960,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/tokenizer.json"
       },
       {
@@ -629,14 +1236,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 4426559145,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/model.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/video_preprocessor_config.json"
+      },
+      {
+        "path": "vocab.json",
+        "role": "vocab",
+        "sha256": "",
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-2B-bf16",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-2B-bf16/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -645,30 +1277,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 5120,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": false,
-      "quant_type": null,
-      "parameterScaleB": 2.0,
+      "family": "qwen3.5",
+      "quant_type": "bf16",
       "hfRepoId": "mlx-community/Qwen3.5-2B-bf16",
-      "hfLastModified": "2026-03-02T16:17:02.000Z",
-      "hfDownloads": 1251,
-      "totalBytes": 4446552535
+      "hfLastModified": "2026-03-02T16:17:02+00:00",
+      "hfDownloads": 150,
+      "totalBytes": 4453334084
     }
   },
   {
@@ -681,17 +1317,107 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7756,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3331,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/config.json"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "a68b87558c6ef43f74c2bd63ce7e9092ceddc3101f3def0030774bae5f42aadd",
+        "sizeBytes": 5349771222,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "model-00001-of-00002.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/model-00001-of-00002.safetensors"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "b0a770bf8469c7f3f18756a0e0283f1c1174344a83e059a4e483f6af4907352d",
+        "sizeBytes": 600449850,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "model-00002-of-00002.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/model-00002-of-00002.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 123592,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/tokenizer.json"
       },
       {
@@ -699,21 +1425,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model-00001-of-00002.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 5349771222,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/model-00001-of-00002.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/video_preprocessor_config.json"
       },
       {
-        "path": "model-00002-of-00002.safetensors",
-        "role": "weights",
+        "path": "vocab.json",
+        "role": "vocab",
         "sha256": "",
-        "sizeBytes": 600449850,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/model-00002-of-00002.safetensors"
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-4bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-4bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -722,30 +1466,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "4bit",
-      "parameterScaleB": 9.0,
       "hfRepoId": "mlx-community/Qwen3.5-9B-4bit",
-      "hfLastModified": "2026-03-02T16:42:26.000Z",
-      "hfDownloads": 14897,
-      "totalBytes": 5970214885
+      "hfLastModified": "2026-03-02T16:42:26+00:00",
+      "hfDownloads": 8674,
+      "totalBytes": 5977071067
     }
   },
   {
@@ -758,17 +1506,107 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7756,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3331,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/config.json"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "0dcb3cdba0f43743875c861792685da5266aebcb58f7c0e345b9cd090bb0d289",
+        "sizeBytes": 5339522525,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "model-00001-of-00002.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/model-00001-of-00002.safetensors"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "role": "weights",
+        "sha256": "5abf861e7a13e7af805105270b2648634b41fda02238ae8ee1bd64628acce9b1",
+        "sizeBytes": 5087069898,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "model-00002-of-00002.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/model-00002-of-00002.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 123593,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/tokenizer.json"
       },
       {
@@ -776,21 +1614,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model-00001-of-00002.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 5339522525,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/model-00001-of-00002.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/video_preprocessor_config.json"
       },
       {
-        "path": "model-00002-of-00002.safetensors",
-        "role": "weights",
+        "path": "vocab.json",
+        "role": "vocab",
         "sha256": "",
-        "sizeBytes": 5087069898,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/model-00002-of-00002.safetensors"
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-8bit",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-8bit/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -799,30 +1655,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": true,
+      "family": "qwen3.5",
       "quant_type": "8bit",
-      "parameterScaleB": 9.0,
       "hfRepoId": "mlx-community/Qwen3.5-9B-8bit",
-      "hfLastModified": "2026-03-02T22:23:51.000Z",
-      "hfDownloads": 10559,
-      "totalBytes": 10446586236
+      "hfLastModified": "2026-03-02T22:23:51+00:00",
+      "hfDownloads": 3301,
+      "totalBytes": 10453442419
     }
   },
   {
@@ -835,17 +1695,133 @@
     ],
     "files": [
       {
+        "path": "chat_template.jinja",
+        "role": "tokenizer",
+        "sha256": "",
+        "sizeBytes": 7756,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "chat_template.jinja"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/chat_template.jinja"
+      },
+      {
         "path": "config.json",
         "role": "config",
         "sha256": "",
         "sizeBytes": 3126,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/config.json"
+      },
+      {
+        "path": "model-00001-of-00004.safetensors",
+        "role": "weights",
+        "sha256": "e3b5f57e750761c35e2a35788e548ea40b1217e6e6858110d5d0d102f03c9dc2",
+        "sizeBytes": 5348499151,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "model-00001-of-00004.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00001-of-00004.safetensors"
+      },
+      {
+        "path": "model-00002-of-00004.safetensors",
+        "role": "weights",
+        "sha256": "87f610cfc2d9aad9b639b00adf3d3bb66dc97ce88a456a60f4502aa318ef97b4",
+        "sizeBytes": 5290356123,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "model-00002-of-00004.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00002-of-00004.safetensors"
+      },
+      {
+        "path": "model-00003-of-00004.safetensors",
+        "role": "weights",
+        "sha256": "a981865c0093d379a0acda9011fd43ab182793109705e94de4fd83cb5d67d228",
+        "sizeBytes": 5357530848,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "model-00003-of-00004.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00003-of-00004.safetensors"
+      },
+      {
+        "path": "model-00004-of-00004.safetensors",
+        "role": "weights",
+        "sha256": "84fc23e940f77c2c51bfa8d6bd5ef715dc9fb0e8eb802555982097a2abed98e6",
+        "sizeBytes": 2823336569,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "model-00004-of-00004.safetensors"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00004-of-00004.safetensors"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 72283,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "model.safetensors.index.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model.safetensors.index.json"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 390,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/preprocessor_config.json"
+      },
+      {
+        "path": "processor_config.json",
+        "role": "config",
+        "sha256": "",
+        "sizeBytes": 1300,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "processor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/processor_config.json"
       },
       {
         "path": "tokenizer.json",
         "role": "tokenizer",
-        "sha256": "",
+        "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
         "sizeBytes": 19989343,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "tokenizer.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/tokenizer.json"
       },
       {
@@ -853,35 +1829,39 @@
         "role": "tokenizer",
         "sha256": "",
         "sizeBytes": 1139,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "tokenizer_config.json"
+        },
         "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/tokenizer_config.json"
       },
       {
-        "path": "model-00001-of-00004.safetensors",
-        "role": "weights",
+        "path": "video_preprocessor_config.json",
+        "role": "config",
         "sha256": "",
-        "sizeBytes": 5348499151,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00001-of-00004.safetensors"
+        "sizeBytes": 385,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "video_preprocessor_config.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/video_preprocessor_config.json"
       },
       {
-        "path": "model-00002-of-00004.safetensors",
-        "role": "weights",
+        "path": "vocab.json",
+        "role": "vocab",
         "sha256": "",
-        "sizeBytes": 5290356123,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00002-of-00004.safetensors"
-      },
-      {
-        "path": "model-00003-of-00004.safetensors",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 5357530848,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00003-of-00004.safetensors"
-      },
-      {
-        "path": "model-00004-of-00004.safetensors",
-        "role": "weights",
-        "sha256": "",
-        "sizeBytes": 2823336569,
-        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/model-00004-of-00004.safetensors"
+        "sizeBytes": 6722759,
+        "source": {
+          "type": "hf_snapshot",
+          "repoId": "mlx-community/Qwen3.5-9B-bf16",
+          "revision": "main",
+          "filename": "vocab.json"
+        },
+        "downloadUrl": "https://huggingface.co/mlx-community/Qwen3.5-9B-bf16/resolve/main/vocab.json"
       }
     ],
     "recommendedEngines": [
@@ -890,30 +1870,34 @@
     "backendKind": "qwen-mlx",
     "capabilities": {
       "supportedModules": [
-        "module.llm.chat"
+        "module.llm.chat",
+        "module.agent"
       ],
       "taskProfiles": [
-        "chat"
+        "chat",
+        "tool-calling",
+        "agent"
       ],
       "promptProfiles": {
-        "chat": "qwen.chat.v1"
-      }
+        "chat": "qwen3.5.chat.v1",
+        "tool-calling": "qwen3.5.tools.v1",
+        "agent": "qwen3.5.agent.v1"
+      },
+      "supportsToolCalling": true
     },
     "constraints": {
       "minOs": "17.0.0",
-      "minRamMB": 16384,
-      "supportsStreaming": false
+      "minRamMB": 3072,
+      "supportsStreaming": true
     },
-    "license": "apache-2.0",
+    "license": "unknown",
     "_meta": {
-      "family": "qwen",
-      "quantized": false,
-      "quant_type": null,
-      "parameterScaleB": 9.0,
+      "family": "qwen3.5",
+      "quant_type": "bf16",
       "hfRepoId": "mlx-community/Qwen3.5-9B-bf16",
-      "hfLastModified": "2026-03-02T22:24:43.000Z",
-      "hfDownloads": 1654,
-      "totalBytes": 18839716299
+      "hfLastModified": "2026-03-02T22:24:43+00:00",
+      "hfDownloads": 375,
+      "totalBytes": 18846521172
     }
   }
 ]

@@ -19,29 +19,13 @@ fetch_mlx_model_catalog.py
 import argparse
 import json
 import re
-import sys
-import urllib.parse
-import urllib.request
 from pathlib import Path
+
+from huggingface_hub_client import HuggingFaceHubClient
 
 # ─────────────────────────────────────────────
 # 数据源配置
 # ─────────────────────────────────────────────
-
-# HuggingFace Model Search API
-HF_MODEL_API = "https://huggingface.co/api/models"
-
-# 搜索条件（满足 mlx-swift 仅支持 safetensors 的约束）：
-#   - search=whisper mlx-community：关键词限定 Whisper + mlx-community
-#   - library=mlx：限定 MLX 模型
-#   - filter=safetensors：限定仓库含 safetensors
-#   - limit=1000：一次拉取足够多结果（当前远小于该数量）
-HF_SEARCH_PARAMS = {
-    "search": "whisper mlx-community",
-    "library": "mlx",
-    "filter": "safetensors",
-    "limit": "1000",
-}
 
 # 当前运行时仅支持非 asr 配置格式，抓取阶段默认过滤 `-asr-` 仓库。
 EXCLUDE_ASR_MODELS = True
@@ -115,41 +99,18 @@ FAMILY_RAM_MB = {
 # 已知系列名（顺序从长到短，避免 'large' 被 'large-v3' 前缀误匹配）
 KNOWN_FAMILIES = ["large", "medium", "small", "base", "tiny", "turbo"]
 
-# ─────────────────────────────────────────────
-# 网络工具
-# ─────────────────────────────────────────────
-
-def fetch_json(url: str) -> dict | list:
-    """
-    从指定 URL 获取 JSON 数据。
-    添加 User-Agent 避免被 HuggingFace 拒绝（HF 对无 UA 的请求可能返回 403）。
-    """
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; mlx-catalog-fetcher/1.0)"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        print(f"HTTP 错误 {e.code}：{url}", file=sys.stderr)
-        sys.exit(1)
-    except urllib.error.URLError as e:
-        print(f"网络错误：{e.reason}", file=sys.stderr)
-        sys.exit(1)
-
-
-def fetch_search_items() -> list[str]:
+def fetch_search_items(client: HuggingFaceHubClient) -> list[str]:
     """
     从 HuggingFace Search API 获取模型 ID 列表。
     搜索条件：library=mlx、filter=safetensors、关键词 whisper+mlx-community。
     """
-    search_url = f"{HF_MODEL_API}?{urllib.parse.urlencode(HF_SEARCH_PARAMS)}"
-    print(f"拉取 Search API：{search_url}")
-    data = fetch_json(search_url)
-    if not isinstance(data, list):
-        print(f"Search API 返回结构异常：{type(data)}", file=sys.stderr)
-        sys.exit(1)
+    data = client.search_models(
+        search="whisper",
+        author="mlx-community",
+        library="mlx",
+        model_filter="safetensors",
+        limit=1000,
+    )
 
     model_ids = []
     seen = set()
@@ -175,7 +136,7 @@ def fetch_search_items() -> list[str]:
     return model_ids
 
 
-def fetch_model_detail(model_id: str) -> dict:
+def fetch_model_detail(model_id: str, client: HuggingFaceHubClient) -> dict:
     """
     获取单个模型的完整信息（含 siblings 文件列表与 cardData）。
 
@@ -185,9 +146,8 @@ def fetch_model_detail(model_id: str) -> dict:
     API 端点：GET /api/models/{model_id}
     返回完整 model 对象，包含 siblings 数组。
     """
-    url = f"{HF_MODEL_API}/{model_id}"
-    print(f"    请求模型详情：{url}")
-    return fetch_json(url)
+    print(f"    请求模型详情：{model_id}")
+    return client.model_info(model_id)
 
 # ─────────────────────────────────────────────
 # 模型名称解析
@@ -447,7 +407,8 @@ def fetch_mlx_catalog(output_path: Path, raw_output_path: Path | None = None) ->
     print("")
 
     # ── Step 1：获取 Search API 模型 ID 列表 ──
-    model_ids = fetch_search_items()
+    client = HuggingFaceHubClient()
+    model_ids = fetch_search_items(client)
     print(f"Search API 命中 {len(model_ids)} 个候选模型\n")
 
     # ── Step 2：逐个拉取模型详情（含文件清单）──
@@ -456,7 +417,7 @@ def fetch_mlx_catalog(output_path: Path, raw_output_path: Path | None = None) ->
     for i, model_id in enumerate(model_ids, 1):
         repo_name = extract_repo_name(model_id)
         print(f"  [{i}/{len(model_ids)}] {repo_name}")
-        detail = fetch_model_detail(model_id)
+        detail = fetch_model_detail(model_id, client)
         raw_models.append(detail)
 
     # 可选：保存原始 API 响应（用于调试与离线分析）

@@ -37,7 +37,11 @@ catalog-index.json
 3. For each matched item, client resolves `listRef.url` relative to the index URL and fetches the model list.
 4. Client verifies the downloaded file against `listRef.sha256` (when non-empty).
 5. Manifests are registered into the local model registry.
-6. Shared Gemma manifests can then be projected to Translate and Chat via `capabilities.supportedModules`.
+6. Shared Gemma manifests can then be projected to Translate, Chat, and Agent via `capabilities.supportedModules`.
+
+Both index items and manifests expose `supportedModules`. This lets a Chat-only
+client fetch the Qwen Chat list plus the shared Gemma list without fetching ASR
+or unrelated model families.
 
 ### Resolving relative URLs
 
@@ -59,6 +63,7 @@ let listURL  = URL(string: "./asr-mlx-models.json", relativeTo: indexURL)!
 | `generatedAt` | string | ISO 8601 UTC |
 | `ttlSeconds` | number | Suggested client-side cache TTL |
 | `items[].moduleId` | string | e.g. `module.asr` |
+| `items[].supportedModules` | string[] | Optional module projections used while filtering the index |
 | `items[].engine` | string | `mlx`, `whispercpp`, … |
 | `items[].platforms` | string[] | `ios`, `macos` |
 | `items[].listRef.url` | string | Relative URL to the model list file |
@@ -84,6 +89,7 @@ Each file is a JSON array of manifest objects:
 | `capabilities.supportedModules` | string[] | Functional projections, e.g. Translate + Chat |
 | `capabilities.taskProfiles` | string[] | Supported task kinds |
 | `capabilities.promptProfiles` | object | Prompt profile mapping used by runtime backends |
+| `capabilities.supportsToolCalling` | boolean | Whether the model/chat template supports Agent tool calls |
 | `constraints.minOs` | string | Minimum OS version |
 | `constraints.minRamMB` | number | Minimum RAM in MB |
 | `constraints.supportsStreaming` | boolean | Whether streaming inference is supported |
@@ -93,10 +99,16 @@ Each file is a JSON array of manifest objects:
 
 ## Updating the catalog
 
-1. Edit or add entries in the relevant model list file.
-2. Update `catalogVersion` and `generatedAt` in `catalog-index.json`.
-3. Recompute `sha256` for any changed list files and update `listRef.sha256`.
-4. Open a PR — changes take effect for clients after the TTL expires.
+1. Install generator dependencies with `python3 -m pip install -r Scripts/requirements.txt`.
+2. Run `python3 Scripts/fetch_llm_model_catalog.py` for Gemma 4 and Qwen 3.5.
+3. Run the corresponding ASR generator when updating Whisper catalogs.
+4. Update `catalogVersion` and `generatedAt` in `catalog-index.json`.
+5. Recompute `sha256` for changed lists when hash verification is enabled.
+
+Catalog discovery uses `huggingface_hub.HfApi`. `transformers` is intentionally
+not a catalog-search dependency: it is used by runtimes for model loading and
+`apply_chat_template`, while Hub search, metadata, and file enumeration belong
+to `huggingface_hub`.
 
 ---
 

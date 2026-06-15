@@ -12,22 +12,22 @@ fetch_model_catalog.py
 import argparse
 import json
 import re
-import sys
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+from huggingface_hub_client import HuggingFaceHubClient
 
 # ─────────────────────────────────────────────
 # 数据源配置
 # ─────────────────────────────────────────────
 
-# 主仓库：HuggingFace API（返回 siblings 文件列表，无需解析 HTML）
-HF_API_URL   = "https://huggingface.co/api/models/ggerganov/whisper.cpp"
+# 主仓库
+HF_REPO_ID   = "ggerganov/whisper.cpp"
 HF_RESOLVE   = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
 HF_PAGE_URL  = "https://huggingface.co/ggerganov/whisper.cpp"
 
 # tinydiarize 独立仓库（说话人分离版本）
-TDRZ_API_URL = "https://huggingface.co/api/models/akashmjn/tinydiarize-whisper.cpp"
+TDRZ_REPO_ID = "akashmjn/tinydiarize-whisper.cpp"
 TDRZ_RESOLVE = "https://huggingface.co/akashmjn/tinydiarize-whisper.cpp/resolve/main"
 
 # 默认输出文件（与本脚本同目录）
@@ -35,29 +35,6 @@ DEFAULT_OUTPUT = Path(__file__).parent / "model_catalog.json"
 
 # 已知模型系列（用于 family 推断，顺序从长到短避免前缀误匹配）
 KNOWN_FAMILIES = ["large", "medium", "small", "base", "tiny"]
-
-# ─────────────────────────────────────────────
-# 网络工具
-# ─────────────────────────────────────────────
-
-def fetch_json(url: str) -> dict:
-    """
-    从指定 URL 获取 JSON 数据。
-    添加 User-Agent 避免被 HuggingFace 拒绝。
-    """
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; whisper-catalog-fetcher/1.0)"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        print(f"HTTP 错误 {e.code}：{url}")
-        sys.exit(1)
-    except urllib.error.URLError as e:
-        print(f"网络错误：{e.reason}")
-        sys.exit(1)
 
 # ─────────────────────────────────────────────
 # 文件名解析
@@ -176,10 +153,11 @@ def fetch_catalog(output_path: Path) -> None:
     3. 合并并写入 JSON 文件
     """
     all_entries: list[dict] = []
+    client = HuggingFaceHubClient()
 
     # ── 主仓库 ──
-    print(f"拉取主仓库：{HF_API_URL}")
-    data     = fetch_json(HF_API_URL)
+    print(f"拉取主仓库：{HF_REPO_ID}")
+    data     = client.model_info(HF_REPO_ID)
     siblings = data.get("siblings", [])
     bin_map, coreml_set = parse_siblings(siblings)
     entries  = build_model_entries(bin_map, coreml_set, HF_RESOLVE, tdrz=False)
@@ -187,8 +165,8 @@ def fetch_catalog(output_path: Path) -> None:
     all_entries.extend(entries)
 
     # ── tinydiarize 仓库 ──
-    print(f"拉取 tinydiarize 仓库：{TDRZ_API_URL}")
-    tdrz_data     = fetch_json(TDRZ_API_URL)
+    print(f"拉取 tinydiarize 仓库：{TDRZ_REPO_ID}")
+    tdrz_data     = client.model_info(TDRZ_REPO_ID)
     tdrz_siblings = tdrz_data.get("siblings", [])
     tdrz_bin_map, tdrz_coreml_set = parse_siblings(tdrz_siblings)
     tdrz_entries  = build_model_entries(tdrz_bin_map, tdrz_coreml_set, TDRZ_RESOLVE, tdrz=True)
