@@ -4,6 +4,7 @@ Static model catalog for the PAI on-device AI runtime.
 
 Clients fetch `catalog-index.json` as the entry point, then resolve each `listRef` relative to it to obtain per-engine model manifests.
 
+[https://github.com/emenwin/pai-model-catalog](https://github.com/emenwin/pai-model-catalog)
 ---
 
 ## Repository layout
@@ -41,7 +42,7 @@ catalog-index.json
 ### Resolving relative URLs
 
 ```swift
-let indexURL = URL(string: "https://raw.githubusercontent.com/<org>/pai-model-catalog/main/catalog-index.json")!
+let indexURL = URL(string: "https://raw.githubusercontent.com/emenwin/pai-model-catalog/main/catalog-index.json")!
 let listURL  = URL(string: "./asr-mlx-models.json", relativeTo: indexURL)!
 // → https://raw.githubusercontent.com/<org>/pai-model-catalog/main/asr-mlx-models.json
 ```
